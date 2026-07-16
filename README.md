@@ -1,5 +1,7 @@
 # DocProc
 
+#Of course I have no idea what I am doing and am still trying to figure out how to upload the project...
+
 DocProc is a local-first desktop application for converting PDF records into a
 single Markdown document with an LM Studio vision model. It rasterizes PDF pages
 to PNG, lets the operator confirm logical record boundaries, sends every record
