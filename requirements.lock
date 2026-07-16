@@ -1,0 +1,5 @@
+PySide6_Essentials==6.10.2
+PyMuPDF==1.26.7
+httpx==0.28.1
+keyring==25.7.0
+platformdirs==4.5.1

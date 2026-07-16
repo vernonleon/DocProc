@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "docproc"
+version = "0.1.1"
+description = "Local-first PDF to Markdown processing with LM Studio"
+requires-python = ">=3.12"
+license = "AGPL-3.0-only"
+dependencies = [
+  "PySide6_Essentials>=6.10,<7",
+  "PyMuPDF>=1.26,<2",
+  "httpx>=0.28,<1",
+  "keyring>=25.7,<26",
+  "platformdirs>=4.5,<5",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=9,<10", "respx>=0.22,<1"]
+
+[project.scripts]
+docproc = "docproc.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/vsanders/DocProc"
+Issues = "https://github.com/vsanders/DocProc/issues"
+
+[tool.setuptools.packages.find]
+include = ["docproc*"]
+
+[tool.setuptools.package-data]
+docproc = ["profiles/*.json", "assets/*.png"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
